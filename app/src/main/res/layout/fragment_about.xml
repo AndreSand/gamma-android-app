@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.rza.About_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:src="@mipmap/ic_gamma" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:text="@string/about_us"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_us"
+            android:layout_centerHorizontal="true"
+            android:linksClickable="true"
+            android:text="@string/more_info"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/about_us"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:maxHeight="60dp"
+                android:maxWidth="60dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/acebook_circle" />
+
+            <ImageButton
+                android:id="@+id/ib_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="ib_twitter"
+                android:maxHeight="60dp"
+                android:maxWidth="60dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/twitter_circle" />
+
+            <ImageButton
+                android:id="@+id/ib_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="ib_instagram"
+                android:maxHeight="60dp"
+                android:maxWidth="60dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/instagram_circle" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
